@@ -1,0 +1,220 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: relative;
+}
+/* =============Шапка главного меню============= */
+/* навигация шапки */
+.header_menu {
+  min-height: 50px;
+  background-color: #212121;
+  position: fixed;
+  width: 100%;
+
+  z-index: 999;
+}
+
+/* список меню */
+.header_list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+}
+
+/* Ссылки меню */
+.header_menu .header_item a {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+.header_menu .header_item {
+  padding-right: 30px;
+  border-right: 2px dotted #000;
+}
+.header_menu .header_item:last-child {
+  border-right: none;
+  padding-right: 0px;
+}
+/* ==================Конец навигации================== */
+
+/*================== Header Submenu================== */
+/* Logo  и номер */
+.header_submenu {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 84px;
+  position: absolute;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* ===================Logo================== */
+.header_logo {
+  margin: 16px 0;
+}
+.header_logo .header_logo_link img {
+  max-width: 100%;
+}
+.header_logo_text {
+  margin-top: 6px;
+  font-weight: 100;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.502);
+}
+
+/* ===================Телефон================== */
+.header_call {
+  margin-top: 23px;
+  text-align: right;
+}
+.header_call_text {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  line-height: 1.167;
+  font-weight: 300;
+}
+.header_phone {
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+/* =================Кнопка шапки================*/
+.header_btn {
+  margin: 19px 0;
+
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  width: 172px;
+  height: 46px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.12);
+
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0.707px 0.707px 0px rgba(0, 0, 0, 0.21);
+}
+/* ==============header_submenu end============== */
+
+/* =====================promo===================== */
+/*========== BG promo ==========*/
+.promo {
+  background: url(../img/bg/main-bg.jpg) center center/cover no-repeat;
+  padding: 198px 0 135px 0;
+}
+
+/* ========Promo title======== */
+.promo .header_title,
+.promo .header_subtitle {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+.promo .header_title {
+  line-height: 44px;
+  font-weight: 900;
+  font-size: 60px;
+}
+.promo .header_subtitle {
+  margin-top: 14px;
+  line-height: 36px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.promo .header_discr {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  line-height: 1.333;
+  text-align: center;
+  width: 1000px;
+
+  margin-top: 24px;
+}
+
+/* ==============Header button============== */
+.promo .promo_btn {
+  display: block;
+  margin: 102px auto 0 auto;
+
+  width: 259px;
+  height: 63px;
+}
+/* ================================================Promo section end================================================ */
+/* ================================================Preference section================================================ */
+.preference {
+  padding: 70px 0;
+  min-height: 900px;
+}
+.preference .preference-label {
+  width: 112px;
+  height: 24px;
+  background: #000;
+  padding: 6px 13px;
+
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  line-height: 17px;
+
+  margin: 0 auto;
+}
+
+.preference .preference-reasons {
+  font-size: 38px;
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 36px;
+
+  margin-top: 36px;
+}
+
+/* ===============row=============== */
+
+.preference .row {
+  margin-top: 39px;
+}
+
+.preference .preference-item {
+  display: flex;
+  justify-content: center;
+  /* width: 480px; */
+}
+.preference .preference-item__img {
+  width: 113px;
+  height: 113px;
+  border-radius: 100%;
+  background: #1eacc7;
+
+  margin-right: 26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preference .preference-item__img img {
+  max-width: 100%;
+}
+.preference-item__text {
+  width: 341px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000;
+  line-height: 21px;
+}
+.preference-item__text span.preference-item__text_title {
+  text-align: left;
+  font-size: 17px;
+  color: rgb(30, 172, 199);
+  font-weight: 400;
+}
+/*=============================================== preference section end=============================================== */
