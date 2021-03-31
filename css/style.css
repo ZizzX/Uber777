@@ -116,7 +116,7 @@ header {
   margin: 0;
 }
 .promo .header_title {
-  line-height: 44px;
+  line-height: 110%;
   font-weight: 900;
   font-size: 60px;
 }
